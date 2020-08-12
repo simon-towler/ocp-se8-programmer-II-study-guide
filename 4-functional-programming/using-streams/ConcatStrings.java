@@ -1,9 +1,10 @@
+import java.util.stream.Stream;
+
 class ConcatStrings {
    public static void main(String... args) {
-     String[] array = new String[] {"w", "o", "l", "f"};
-     String result = "";
-     for (String s: array) result = result + s;
-     System.out.println(result); // wolf
+     Stream<String> stream = Stream.of("w", "o", "l", "f");
+     String word = stream.reduce("", (s,c) -> s + c);
+     System.out.println(word); // wolf
    }
 
 }
