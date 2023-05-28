@@ -1,3 +1,5 @@
+package com.ocp_se8_programmer_II_study_guide._4;
+
 import java.util.function.BinaryOperator;
 import java.util.stream.Stream;
 
